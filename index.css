@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/********** body **********/
+
+body {
+    margin: 0;
+    font-family: termina, sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: fixed;
+    font-weight: 500;
+    width: 100%;
+    background-color: white;
+}    
+
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    font-size: 18;
+}
+
+.logo {
+    margin-right: auto;
+    padding-left: 8px;
+}
+
+.logo-img {
+    width: 80px;
+}
+
+section {
+    /* Hele høyden til viewport */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: center;
+}
+
+#hjem {
+    background-image: url("./bilder-fortgjort/Mønster2.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bunn-info {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.front-logo {
+    width: 50vw;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sjokolade {
+
+    background-image: url("./bilder-fortgjort/Mønster1.1.png");
+}
+
+#jordbær {
+    background-image: url("./bilder-fortgjort/Mønster1.3.png");
+}
+
+#karamell {
+    background-image: url("./bilder-fortgjort/Mønster1.2.png");
+}
+
+#nyhet {
+    background-image: url("./bilder-fortgjort/Mønster2.png");
+}
+
+.bilde-kontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produkt-bilde {
+    width: 60%;
+}
+
+.info-tekst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 500;
+}
+
+/********** footer **********/
+
+footer {
+    height: 40vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+.footer-tekst {
+    font-size: small;
+}
+
+.knapp {
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px 40px;
+    border-radius: 30px;
+    display: inline-block
+}
